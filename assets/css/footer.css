@@ -34,3 +34,23 @@ footer h4 {
     color: #236811;
 }
 
+#footer-address-bloc {
+    padding: 0 5rem;
+}
+
+.footer-social-ico {
+    display: block;
+    padding: 3px;
+}
+
+.footer-social-ico>img {
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.footer-social-ico:hover>img {
+    border: 2px solid #ffcf11;
+}

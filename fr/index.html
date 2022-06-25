@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/fontawesome-free/css/all.css">
+    <link href="../assets/css/bootstrap5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
@@ -12,7 +13,7 @@
 </head>
 <body>
     <div id="page-content-wrapper" class="h-100 flex-column flex-jc-start">
-        <address id="header-address" class="flex-row flex-jc-space-between">
+        <address id="header-address" class="reset-bootstrap-modif flex-row flex-jc-space-between ">
             <div class="h-100 flex-row flex-ai-center">
                 <a href="" class="bloc-sm-display header-social-ico h-100 pad-h-1rem bloc"><img src="../assets/images/fb_logo_circle.png" alt="" class="h-100 objfit-contain"></a>
                 <a href="" class="bloc-sm-display header-social-ico h-100 pad-h-1rem bloc"><img src="../assets/images/fb_logo_circle.png" alt="" class="h-100 objfit-contain"></a>
@@ -25,7 +26,7 @@
                 <a href="" class="header-social-ico h-100 pad-h-1rem bloc"><img src="../assets/images/fb_logo_circle.png" alt="" class="h-100 objfit-contain"></a>
             </div>
         </address>
-        <nav class="use-custom-nav ">
+        <nav class="reset-bootstrap-modif use-custom-nav ">
             <div class="width-limit-wrapper flex-row flex-jc-space-between">
                 <!-- The use-custom-nav will have w 100%. The wrapper will limit it -->
                 <div class="nav-part logo">
@@ -37,23 +38,23 @@
                         Menu
                     </button>
                     <ul class="right-0 nav-toggle-target">
-                        <li><a href="" class="active">Acceuil</a></li>
+                        <li><a href="" class="active">Acceuil </a></li>
                         <li class="dropdown">
-                            <a class="dropdown-but">A propos</a>
+                            <a class="dropdown-but"> A propos <i class="fa-solid fa-chevron-down"></i></a>
                             <ul>
                                 <li><a href="">Item1</a></li>
                                 <li><a href="">Item2</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-but">Descritpion du Fond</a>
+                            <a class="dropdown-but"> Descritpion du Fond <i class="fa-solid fa-chevron-down"></i></a>
                             <ul>
                                 <li><a href="">Item3</a></li>
                                 <li><a href="">Item4</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-but">Chiffres clés</a>
+                            <a class="dropdown-but"> Chiffres clés <i class="fa-solid fa-chevron-down"></i></a>
                             <ul>
                                 <li><a href="">Item5</a></li>
                                 <li><a href="">Item6</a></li>
@@ -83,7 +84,7 @@
             
         </section>
         
-        <footer>
+        <footer class="reset-bootstrap-modif">
             <section id="footer-head" class="flex-row flex-wrap flex-jc-space-between flex-ai-center">
                 <img src="../assets/images/tinga_logo_details.jpeg" alt="">
                 <button class="hight-visibility-button">Faire un don</button>
@@ -131,12 +132,15 @@
             <address id="footer-address-bloc">
                 <div>
                     <h4>Suivez-nous</h4>
-                    <ul>
-                        <li><a href=""><img src="" alt=""></a></li>
+                    <ul class="flex-row">
+                        <li><a href="" class="footer-social-ico"><img src="../assets/images/fb_logo_circle.png" alt=""></a></li>
+                        <li><a href="" class="footer-social-ico"><img src="../assets/images/fb_logo_circle.png" alt=""></a></li>
+                        <li><a href="" class="footer-social-ico"><img src="../assets/images/fb_logo_circle.png" alt=""></a></li>
                     </ul>
                 </div>
             </address>
         </footer>
+        <script src="../assets/js/bootstrap5/js/bootstrap.bundle.js" ></script>
         <script src="../assets/js/nav.js"></script>
     </div>
 </body>

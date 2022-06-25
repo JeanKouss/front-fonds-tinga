@@ -22,16 +22,10 @@
 }
 
 .use-custom-nav {
+    font-family: sans-serif, Poppins;
+    font-size: 0.9rem;
     width: 100%;
     padding: 0.5rem 0.5rem;
-}
-
-.use-custom-nav ol,
-.use-custom-nav ul,
-.use-custom-nav li,
-.use-custom-nav ol {
-    margin: 0;
-    padding: 0;
 }
 
 .use-custom-nav .nav-part {
@@ -97,6 +91,7 @@
     flex-direction: column;
     top: 100%;
     left: 0;
+    background-color: white;
 }
 
 .use-custom-nav li.dropdown>ul.active {
@@ -120,7 +115,7 @@
 
 .use-custom-nav .nav-part ul>li>a {
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     font-weight: bold;
     color: black;
     display: block;

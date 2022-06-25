@@ -8,6 +8,30 @@
 
 */
 
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url("fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf") format('truetype')
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url("fonts/Fira_Sans/FiraSans-Regular.ttf") format('truetype')
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins/Poppins-Regular.ttf") format('truetype')
+}
+
+.reset-bootstrap-modif ol,
+.reset-bootstrap-modif ul,
+.reset-bootstrap-modif li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
 html {
     font-size: 100%;
 }
