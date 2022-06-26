@@ -1,0 +1,368 @@
+.anime-on-apparition {
+    opacity: 0.1;
+}
+
+.anime-on-apparition.isVisibleOnScreen {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.main-section h2{
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --------------------Header-------------------- */
+header {
+    width: 100%;
+    height: 90vh;
+    height: calc(100vh-7rem);
+    max-height: 850px;
+}
+
+.header-img-list img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* --------------------Fin header-------------------- */
+
+/* --------------------Section Contexte Tinga-------------------- */
+#section-contexte-tinga {
+    background-color: #F4FFEF;
+    display: flex;
+    flex-direction: row;
+}
+.little-comment-part {
+    width: 40%;
+    min-width: 300px;
+    margin: 0 1rem 0 0;
+}
+
+.little-comment-part img{
+    width: 70%;
+    max-height: 310px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.way-part {
+    width: 60%;
+}
+.context-history {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+}
+.context-history .illustr-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 9rem;
+}
+.context-history .illustr-div img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #236800;
+    z-index: 100;
+}
+.context-history:nth-child(3) .illustr-div img {
+    width: 7rem;
+    height: 7rem;
+}
+.context-history .comment {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.context-history .comment h3,
+.context-history .comment p {
+    text-align: left;
+    width: 100%;
+}
+.context-history .illustr-div .stick {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50x);
+    width: 4px;
+    height: 100%;
+    background-color: #236800;
+    z-index: 99;
+}
+.context-history:nth-child(1) .illustr-div .stick  {
+    left: 50%;
+    top: 75%;
+    bottom: 0;
+    height: 50%;
+    transform: translateX(-50x);
+}
+.context-history:nth-child(3) .illustr-div .stick  {
+    left: 50%;
+    top: 0;
+    bottom: 50%;
+    height: 50%;
+    transform: translateX(-50x);
+}
+@media screen and (max-width : 1000px) {
+    #section-contexte-tinga {
+        flex-direction: column;
+    }
+    .little-comment-part {
+        width: 100%;
+        margin: 0;
+    }
+    .way-part {
+        width: 100%;
+    }
+
+    #section-contexte-tinga .bloc-sm-hidden {
+        display: none;
+    }
+    .context-history {
+        justify-content: center;
+        height: 8rem;
+    }
+    .context-history .illustr-div {
+        align-self: stretch;
+        width: 2rem;
+        height: 100%;
+    }
+    .context-history .illustr-div .stick {
+        top: 0 !important;
+        bottom: 0 !important;
+        height: 100% !important;
+    }
+}
+/* --------------------Fin Section Contexte Tinga-------------------- */
+
+/* --------------------Section presentation Tinga-------------------- */
+.advantage-tinga {
+    position: relative;
+    height: fit-content;
+    padding: 1rem;
+    padding-bottom: 3rem; /* Pour positionner le texte au hover */
+}
+.advantage-tinga img {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    max-height: 70.5vw;
+}
+.advantage-tinga p {
+    width: 100%;
+    margin: 0 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.784);
+    color: #236800;
+    font-weight: bold;
+}
+.advantage-tinga:hover img {
+    transition: all 0.5s;
+    object-fit: cover;
+}
+.advantage-tinga:hover p {
+    transition: all 0.5s;
+    top: 200px;
+    background-color: white;
+}
+@media screen and (max-width : 700px) {
+    .advantage-tinga p {
+        top:100%;
+        left: 0;
+        transform: translateY(-100%);
+        background-color: white;
+    }
+}
+/* --------------------Fin Section presentatio Tinga-------------------- */
+
+
+/* --------------------Section Qui peut donner-------------------- */
+.list-who-can-don {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+@media screen and (max-width : 700px) {
+    .list-who-can-don {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.pres-who-can-don {
+    text-align: center;
+    padding: 0.5rem;
+}
+.pres-who-can-don img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    max-height: 70.5vw;
+}
+.pres-who-can-don p {
+    width: 100%;
+    margin: 1rem 0;
+}
+/* --------------------Fin Qui peut donner-------------------- */
+
+
+/* --------------------Section chiffres clés-------------------- */
+/* --------------------Fin Section chiffres clés-------------------- */
+
+
+/* --------------------Section partenaires-------------------- */
+.list-partenaires{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+/* --------------------Fin Section partenaires-------------------- */
+
+
+/* --------------------Section médiatèque-------------------- */
+.mediatheque-pic a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mediatheque-pic a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mediatheque-pic a:nth-child(1) {
+    grid-area: first;
+}
+.mediatheque-pic a:nth-child(2) {
+    grid-area: second;
+}
+.mediatheque-pic a:nth-child(3) {
+    grid-area: tird;
+}
+.mediatheque-pic a:nth-child(4) {
+    grid-area: fourth;
+}
+.mediatheque-pic a:nth-child(5) {
+    grid-area: fifth;
+}
+
+.mediatheque-pic a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mediatheque-pic a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mediatheque-pic a>p {
+    background-color: rgba(255, 255, 255, 0.625);
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(1rem);
+    margin: 0;
+}
+.mediatheque-pic a:hover>p {
+    transition: all 0.5s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mediatheque-pic {
+    /* lié à une Media query */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min(100%, 250px), 350px));
+    grid-template-rows:  repeat(2, 260px);
+    gap: 1rem;
+    grid-template-areas:
+    "first tird fourth"
+    "second tird fifth"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (max-width : 800px) {
+    .mediatheque-pic {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min(100%, 200px), 300px));
+        grid-template-rows:  repeat(3, auto);
+        gap: 1rem;
+        grid-template-areas:
+        "first second  "
+        " tird  tird"
+        "fourth fifth"
+        ;
+        justify-content: center;
+        align-content: center;
+    }
+    .mediatheque-pic a {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    .mediatheque-pic a>p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width : 500px) {
+    .mediatheque-pic {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(min(100%, 200px), 300px));
+        grid-template-rows:  repeat(5, auto);
+        gap: 1rem;
+        grid-template-areas:
+        "first "
+        "second"
+        " tird"
+        "fourth"
+        "fifth"
+        ;
+        justify-content: center;
+        align-content: center;
+    }
+    .mediatheque-pic a {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* Fin Section médiatèque */
+

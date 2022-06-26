@@ -22,10 +22,15 @@
 }
 
 .use-custom-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
     font-family: sans-serif, Poppins;
     font-size: 0.9rem;
     width: 100%;
     padding: 0.5rem 0.5rem;
+    background-color: white;
 }
 
 .use-custom-nav .nav-part {
@@ -92,6 +97,7 @@
     top: 100%;
     left: 0;
     background-color: white;
+    width: 100%;
 }
 
 .use-custom-nav li.dropdown>ul.active {

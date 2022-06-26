@@ -36,6 +36,11 @@ html {
     font-size: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "sans-serif", "FiraSans-Regular", "Fira Sans", "Poppins";
+    color: #236800;
+}
+
 a {
     text-decoration: none;
 }
@@ -81,6 +86,8 @@ body {
 .bottom-0 {bottom: 0;} .bottom-100 {bottom: 100%;}
 
 .pad-h-1rem {padding-left: 1rem; padding-right: 1rem;}
+.marg-v-1rem {margin-top: 1rem; margin-bottom: 1rem;} .marg-h-auto {margin-left: auto; margin-right: auto;}
+
 
 .objfit-contain {object-fit: contain;} .objfit-cover {object-fit: cover;}
 
@@ -97,10 +104,12 @@ body {
 }
 
 /* ------ Project css globals ------ */
+
 .color-white {color: white;}
 .color-main-green {color: #236800;}
 
 .hight-visibility-button {
+    display: block;
     border: none;
     border-radius: 5px;
     width: fit-content;
@@ -110,4 +119,58 @@ body {
     color: #236800;
     font-weight: bold;
     cursor: pointer;
+}
+
+.action-button-link {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0;
+    background-color: #236800;
+    color: white;
+}
+.action-button-link:hover {
+    color: #ffcf11;
+}
+
+.main-section {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.main-section h2 {
+    color: #236800;
+}
+
+
+.min-pres-chiffre-clef {
+    font-family: "Poppins";
+    display: flex;
+    height: 150px;
+    width: 100%;
+    max-width: 300px;
+    margin: 2px;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #236800;
+    border-radius: 0.5rem;
+    color: #ffcf11;
+    text-align: center;
+}
+.min-pres-chiffre-clef .val {
+    margin: 0;
+    justify-self: flex-start;
+    font-size: 2rem;
+}
+.min-pres-chiffre-clef .label {
+    margin: 0;
+    font-size: 0.9rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
