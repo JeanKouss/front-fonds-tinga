@@ -111,6 +111,15 @@ body {
 
 /* ------ Project css globals ------ */
 
+.anime-on-apparition { 
+    /* lié à un global.js */
+    opacity: 0.1;
+}
+.anime-on-apparition.isVisibleOnScreen {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
 .color-white {color: white;}
 .color-main-green {color: #236800;}
 
@@ -185,4 +194,38 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.simple-page-header {
+    width: 100%;
+    margin: 10rem 0;
+    background-color: #23680011;
+}
+.simple-page-header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    margin: 0;
+}
+
+.simple-page-section {
+    width: 100%;
+}
+
+.simple-page-section h2 {
+    position: relative;
+    padding: 3rem 0;
+    padding-left: 5rem;
+}
+
+.simple-page-section h2::after {
+    position: absolute;
+    content: " ";
+    width: 5rem;
+    height: 0.8rem;
+    background-color: #236800;
+    top: 60%;
+    transform: translateY(100%);
+    left: 5rem;
+    
 }
