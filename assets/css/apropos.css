@@ -1,0 +1,71 @@
+#page-content-wrapper {
+    position: relative;
+}
+
+.main-section h2{
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ------------------ Contexte ----------------- */
+#section-contexte {
+    padding: 2rem;
+}
+#section-contexte .text {
+    padding: 1rem;
+}
+#section-contexte img {
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width : 850px) {
+    #section-contexte div {
+        flex-wrap: wrap;
+    }
+    #section-contexte .text {
+        padding: 2rem;
+        width: 100%;
+    }
+}
+
+/* ------------------ Contexte ----------------- */
+.objectifs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 350px));
+    grid-template-rows: auto;
+    align-items: stretch;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.obj-pres {
+    width: 100%;
+    max-width: 350px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffcf11;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+.obj-pres h1 {
+    justify-self: flex-start;
+    width: 100%;
+    padding: 7%;
+    color: black;
+    font-family: "Spline Sans Mono", monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.obj-pres hr {
+    width: 100%;
+    opacity: 0;
+}
+.obj-pres p {
+    flex-grow: 1;
+    padding: 7%;
+}
