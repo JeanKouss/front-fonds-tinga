@@ -7,7 +7,7 @@ let ratio = 0.1;
 let options = {
     root : null,
     rootMargin : '0px',
-    threshold : 1.0
+    threshold : 0.3
 }
 
 // Fonction de callback

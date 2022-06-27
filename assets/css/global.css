@@ -10,17 +10,22 @@
 
 @font-face {
     font-family: 'Fira Sans Condensed';
-    src: url("fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf") format('truetype')
+    src: url("fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url("fonts/Fira_Sans/FiraSans-Regular.ttf") format('truetype')
+    src: url("fonts/Fira_Sans/FiraSans-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url("fonts/Poppins/Poppins-Regular.ttf") format('truetype')
+    src: url("fonts/Poppins/Poppins-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Spline Sans Mono';
+    src: url("fonts/Spline_Sans_Mono/SplineSansMono-Regular.ttf") format('truetype');
 }
 
 .reset-bootstrap-modif ol,
@@ -91,6 +96,8 @@ body {
 
 .objfit-contain {object-fit: contain;} .objfit-cover {object-fit: cover;}
 
+.flip-h {transform: scaleX(-1);}
+
 .bloc-sm-display, .flex-sm-display {display: none;}
 .bloc-sm-hidden {display: block;} .flex-sm-hidden {display: flex;}
 
@@ -119,6 +126,12 @@ body {
     color: #236800;
     font-weight: bold;
     cursor: pointer;
+    transition: box-shadow 0.1s;
+}
+.hight-visibility-button:hover{
+    color: #236800;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 0 16px 2px #236800;
 }
 
 .action-button-link {
