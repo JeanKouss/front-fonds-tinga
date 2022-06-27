@@ -1,3 +1,7 @@
+#page-content-wrapper {
+    position: relative;
+}
+
 .anime-on-apparition {
     opacity: 0.1;
 }
@@ -197,6 +201,7 @@ header {
     align-items: center;
     width: 9rem;
     height: 9rem;
+    flex-shrink: 0;
 }
 .context-history .illustr-div img {
     width: 5rem;
@@ -221,6 +226,7 @@ header {
 .context-history .comment p {
     text-align: left;
     width: 100%;
+    margin: 0;
 }
 .context-history .illustr-div .stick {
     position: absolute;
@@ -263,7 +269,7 @@ header {
         display: none;
     }
     .context-history {
-        justify-content: center;
+        justify-content: flex-start;
         height: 8rem;
     }
     .context-history .illustr-div {
@@ -291,6 +297,7 @@ header {
     max-width: 350px;
     height: 200px;
     max-height: 70.5vw;
+    object-fit: cover;
 }
 .advantage-tinga p {
     width: 100%;
