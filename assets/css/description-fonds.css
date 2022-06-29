@@ -1,0 +1,9 @@
+#page-content-wrapper {
+    position: relative;
+}
+
+.main-section h2{
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,97 @@
+#page-content-wrapper {
+    position: relative;
+}
+
+.main-section h2{
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ----------------------- Section Formes Juridique ------------------------ */
+.list-formes-jurid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 350px));
+    grid-template-rows: auto;
+    align-items: stretch;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.forme-jur-pres {
+    width: 100%;
+    max-width: 350px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #236800;
+    border-radius: 10px;
+    color: white;
+}
+.forme-jur-pres h1 {
+    justify-self: flex-start;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    font-family: "Spline Sans Mono", monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.forme-jur-pres hr {
+    width: 100%;
+    height: 2px;
+    margin: 0;
+}
+.forme-jur-pres p {
+    flex-grow: 1;
+    padding: 1rem;
+}
+/* ----------------------- Fin Section Formes Juridique ------------------------ */
+/* ----------------------- Section Organes de gouvernance ------------------------ */
+
+.list-organes-gouv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 350px));
+    grid-template-rows: auto;
+    align-items: stretch;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.organe-gouv-pres {
+    width: 100%;
+    max-width: 350px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffcf11;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+.organe-gouv-pres h1 {
+    justify-self: flex-start;
+    width: 100%;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: "Spline Sans Mono", monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.organe-gouv-pres hr {
+    width: 100%;
+    height: 2px;
+    margin:0;
+}
+.organe-gouv-pres p {
+    flex-grow: 1;
+    padding: 1rem;
+    vertical-align: center;
+}
