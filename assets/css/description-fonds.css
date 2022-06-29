@@ -7,3 +7,32 @@
     text-align: center;
     font-weight: bold;
 }
+
+/* --------------Section conditions d'éligibilité-------------- */
+.liste-cond-eligibilite .title-condition {
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.liste-cond-eligibilite .title-condition img {
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+/* --------------Fin Section conditions d'éligibilité-------------- */
+
+/* --------------Section origine des ressources-------------- */
+.list-partenaires{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+/* --------------Fin Section origine des ressources-------------- */
+

@@ -9,26 +9,29 @@
 }
 
 /* ------------------ Contexte ----------------- */
-#section-contexte {
-    padding: 2rem;
-}
-#section-contexte .text {
+
+.text-contexte {
     padding: 1rem;
 }
-#section-contexte img {
+.img-contexte {
     width: 300px;
     height: 300px;
 }
 
 @media screen and (max-width : 850px) {
-    #section-contexte div {
+    .div-contexte {
         flex-wrap: wrap;
     }
-    #section-contexte .text {
+    .img-contexte {
+        width: 90%;
+        height: 300px;
+    }
+    .text-contexte {
         padding: 2rem;
         width: 100%;
     }
 }
+/* ------------------ Fin Contexte ----------------- */
 
 /* ------------------ Objectifs ----------------- */
 .objectifs-container {
@@ -68,3 +71,106 @@
     flex-grow: 1;
     padding: 7%;
 }
+/* ------------------ Fin Objectifs ----------------- */
+
+/* ---------------------Missions--------------------- */
+.list-missions {
+    padding: 2rem 1rem 1rem 5%;
+}
+/* .list-missions ul{
+    
+} */
+.list-missions li {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 4rem auto;
+    border-bottom: 4px solid #236800;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+.list-missions li .num-mission{
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #236800;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #23680011;
+}
+.list-missions li .title{
+    font-weight: bold;
+    color: #236800;
+}
+.circle-decoration {
+    display: none;
+}
+@media screen and (min-width : 900px) {
+    .circle-decoration {
+        display: block;
+        position: absolute;
+        height: 40rem;
+        width: 40rem;
+        border-radius: 50%;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border: 1rem solid #236800;
+    }
+    #missions-tinga {
+        position: relative;
+    }
+    #missions-tinga h2 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+    .list-missions {
+        padding: 1rem 1rem 1rem 5rem;
+    }
+    .list-missions ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40rem;
+    }
+    .list-missions li {
+        position: relative;
+        z-index: 10;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+        margin: 1rem 5rem;
+    }
+    .list-missions li .num-mission{
+        font-family: 'Spline Sans Mono', monospace;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #236800;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f0f5ee;
+        min-width: 4rem;
+        min-height: 4rem;
+        border-radius: 50%;
+        border: 4px solid #236800;
+    }
+    .list-missions li:nth-child(2),
+    .list-missions li:nth-child(3)
+    {
+        margin-left: 11.6rem;
+    }
+    .list-missions li:nth-child(1) .num-mission,
+    .list-missions li:nth-child(4) .num-mission
+    {
+        margin-right: 3rem;
+    }
+}
+/* ---------------------Fin Missions--------------------- */

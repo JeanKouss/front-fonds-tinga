@@ -368,6 +368,27 @@ header {
 /* --------------------Section chiffres clés-------------------- */
 /* --------------------Fin Section chiffres clés-------------------- */
 
+/* --------------------Section actualités-------------------- */
+.partial-actu-list .actu {
+    display: block;
+    color: black;
+    width: 100%;
+    max-width: 275px;
+    padding: 0.5rem;
+}
+.partial-actu-list .actu img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.partial-actu-list .actu p{
+    width: 100%;
+}
+.partial-actu-list .actu .actu-title{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+/* --------------------Fin Section actualités-------------------- */
 
 /* --------------------Section partenaires-------------------- */
 .list-partenaires{

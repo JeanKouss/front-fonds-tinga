@@ -208,6 +208,10 @@ body {
     margin: 0;
 }
 
+.pad-align-with-h2 { /* To make elements padding left align with .simple-page-section h2 */
+    padding-left: 5rem;
+}
+
 .simple-page-section {
     width: 100%;
 }
@@ -276,4 +280,61 @@ section.section-voir-aussi .list-links a::after{
 section.section-voir-aussi .list-links a:hover::after{
     width: 100%;
     transition: all 0.25s;
+}
+
+.only-text-container {
+    width: 100%;
+    padding: 0 1rem 2rem 5rem;
+}
+.only-text-container p {
+    width: 100%;
+    max-width: 900px;
+}
+
+.table-style1 th,
+.table-style1 td {
+    border: 2px solid #236800;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-style1 thead tr {
+    background-color: #236800;
+    color: white;
+}
+.table-style1 tbody tr {
+    color: #236800;
+}
+.table-style1 tbody tr:nth-child(even) {
+    background-color: #23680011;
+}
+.table-style1 tbody tr:hover {
+    background-color: #ffcf11aa;
+}
+
+@media screen and (max-width : 800px) {
+    .pad-align-with-h2 {
+        padding-left: 5%;
+    }
+
+    .simple-page-section h2 {
+        position: relative;
+        padding: 3rem 0;
+        padding-left: 5%;
+    }
+    
+    .simple-page-section h2::after {
+        position: absolute;
+        content: " ";
+        width: 5rem;
+        height: 0.8rem;
+        background-color: #236800;
+        top: 60%;
+        transform: translateY(100%);
+        left: 5%;
+        
+    }
+
+    .only-text-container {
+        padding: 0 1rem 2rem 5%;
+    }
 }
