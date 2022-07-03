@@ -1,0 +1,41 @@
+.table-container {
+    padding-right: 1rem;
+}
+
+.list-boxes-chiffres {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.simple-page-section {
+    padding-bottom: 2rem;
+}
+
+.chif-pres-style1 {
+    background-color: #FFD21F;
+}
+.chif-pres-style1>p.val,
+.chif-pres-style1>p.label {
+    color: rgb(0, 0, 0);
+}
+.chif-pres-style2 {
+    background-color: #FFD73B;
+}
+.chif-pres-style2>p.val,
+.chif-pres-style2>p.label {
+    color: rgb(0, 0, 0);
+}
+.chif-pres-style3 {
+    background-color: #FFDD57;
+}
+.chif-pres-style3>p.val,
+.chif-pres-style3>p.label {
+    color: rgb(0, 0, 0);
+}
+.chif-pres-style4 {
+    background-color: #FFE373;
+}
+.chif-pres-style4>p.val,
+.chif-pres-style4>p.label {
+    color: rgb(0, 0, 0);
+}
