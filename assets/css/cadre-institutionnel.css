@@ -55,35 +55,55 @@
 
 .list-organes-gouv {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 350px));
+    grid-template-columns: repeat(auto-fit, 100%); /*minmax(min(100%, 1000px), 350px)*/
     grid-template-rows: auto;
     align-items: stretch;
-    gap: 5px;
+    gap:4rem;
     justify-content: space-evenly;
     align-content: center;
 }
 
 .organe-gouv-pres {
     width: 100%;
-    max-width: 350px;
-    min-height: 300px;
+    max-width: 900px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    background-color: #ffcf11;
-    border-radius: 10px;
+    align-items: flex-start;
+    /* background-color: #ffcf11; */
+    border-left: 2px solid #ffcf11;
+    /* border-radius: 10px; */
     color: rgb(0, 0, 0);
 }
 .organe-gouv-pres h1 {
     justify-self: flex-start;
     width: 100%;
     padding: 1rem;
-    color: rgb(0, 0, 0);
+    color: #236800;
     font-family: "Spline Sans Mono", monospace;
     font-weight: bold;
     font-size: 1.1rem;
-    text-align: center;
+    /* text-align: center; */
+}
+.organe-gouv-pres h2 {
+    justify-self: flex-start;
+    width: 100%;
+    padding: 1rem;
+    color: #514100;
+    font-family: "Spline Sans Mono", monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.organe-gouv-pres h2::after {
+    display: none;
+}
+.organe-gouv-pres h2 i.fa-solid.fa-caret-down {
+    transition: transform 0.5s;
+}
+.organe-gouv-pres h2.div-opened i.fa-solid.fa-caret-down{
+    transform: rotate(180deg);
 }
 .organe-gouv-pres hr {
     width: 100%;
@@ -95,3 +115,28 @@
     padding: 1rem;
     vertical-align: center;
 }
+.details-organes {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+.details-organes:last-child {
+    border-top: none;
+}
+.details-organes div {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.details-organes div>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* #org-conseil-surveil .details-membres div.open {height: 17rem;}
+#org-conseil-surveil .details-mission div.open {height: 11rem;}
+#org-conseil-admin .details-membres div.open {height: 9rem;}
+#org-conseil-admin .details-mission div.open {height: 26rem;}
+#org-dir-gen .details-mission div.open {height: 20rem;} */

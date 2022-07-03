@@ -1,0 +1,78 @@
+
+.simple-page-section {
+    margin-bottom: 3rem;
+}
+
+/* Section offres du fond */
+.table-style1 tr {
+    font-weight: bold;
+}
+
+.table-container {
+    padding-right: 0.5rem;
+    margin-bottom: 2rem;
+}
+/* Fin Section offres du fond */
+
+/* Section originalités deu fonds */
+.ul-origi-fonds {
+    padding: 0 1rem 0 0;
+}
+.ul-origi-fonds li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.ul-origi-fonds li i {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #ffcf00;
+    margin-right: 1em;
+}
+/* Fin Section originalités deu fonds */
+
+/* Section témoignages */
+.testimony {
+    margin-top: 5rem;
+    padding: 5rem 0.5rem 0.5rem 0.5rem;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    color: black;
+    background-color: #ffcf0033;
+    border-radius: 10px;
+}
+.testimony:hover {
+    color: black;
+}
+.testimony .testimony-author {
+    text-align: center;
+    color: #236800;
+    font-weight: bold;
+}
+.testimony .testimony-content {
+    text-align: center;
+}
+.testimony img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.carousel-indicators button[data-bs-slide-to] {
+    background-color: #236800aa;
+}
+#testimonies-caroussel {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+#testimonies-caroussel .carousel-control-prev-icon {
+    background-image: url("../images/previous.png");
+}
+#testimonies-caroussel .carousel-control-next-icon {
+    background-image: url("../images/next.png");
+}
+/* Fin Section témoignages */
