@@ -56,17 +56,17 @@ header {
     left: 5%;
     border-left: 5px solid #236800;
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     min-height:50%;
     max-height: 600px;
     padding: 0.5rem;
     overflow-x: hidden;
-    background: hsla(48, 100%, 53%, 1);
+    /* background: hsla(48, 100%, 53%, 1);
     background: linear-gradient(-90deg, hsla(48, 100%, 53%, 1) 0%, rgba(255, 255, 255, 0) 100%);
     background: -moz-linear-gradient(-90deg, hsla(48, 100%, 53%, 1) 0%, rgba(255, 255, 255, 0) 100%);
     background: -webkit-linear-gradient(-90deg, hsla(48, 100%, 53%, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFCF11", endColorstr="#FFFFFFFFF", GradientType=1);
-
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFCF11", endColorstr="#FFFFFFFFF", GradientType=1); */
+    text-shadow: 0 0 1px white;
 }
 .slider-comments-list .comment-item {
     position: absolute;
@@ -81,12 +81,12 @@ header {
                 transform 1s ease-in-out;
 }
 .slider-comments-list .comment-item h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .slider-comments-list .comment-item p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: "Spline Sans Mono", monospace;
     font-weight: bold;
@@ -227,6 +227,9 @@ header {
     text-align: left;
     width: 100%;
     margin: 0;
+}
+.context-history .comment h3 {
+    font-size: 1.5rem;
 }
 .context-history .illustr-div .stick {
     position: absolute;

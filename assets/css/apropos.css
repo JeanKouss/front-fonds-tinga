@@ -75,11 +75,13 @@
 
 /* ---------------------Missions--------------------- */
 .list-missions {
-    padding: 2rem 1rem 1rem 5%;
+    padding: 2rem 1rem 2rem 5%;
 }
-/* .list-missions ul{
-    
-} */
+.list-missions ul{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: stretch;
+}
 .list-missions li {
     padding: 0;
     display: grid;
@@ -87,6 +89,11 @@
     border-bottom: 4px solid #236800;
     gap: 0.5rem;
     margin: 1rem 0;
+}
+.list-missions li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .list-missions li .num-mission{
     font-family: 'Spline Sans Mono', monospace;
@@ -120,6 +127,7 @@
     }
     #missions-tinga {
         position: relative;
+        margin-top: 4rem;
     }
     #missions-tinga h2 {
         position: absolute;
