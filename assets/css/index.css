@@ -200,7 +200,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 9rem;
-    height: 9rem;
+    height: 11rem;
     flex-shrink: 0;
 }
 .context-history .illustr-div img {
@@ -244,7 +244,7 @@ header {
 }
 .context-history:nth-child(1) .illustr-div .stick  {
     left: 50%;
-    top: 75%;
+    top: 70%;
     bottom: 0;
     height: 50%;
     transform: translateX(-50x);
@@ -255,6 +255,9 @@ header {
     bottom: 50%;
     height: 50%;
     transform: translateX(-50x);
+}
+.custom-li-ico {
+    display: none;
 }
 @media screen and (max-width : 1000px) {
     #section-contexte-tinga {
@@ -273,7 +276,7 @@ header {
     }
     .context-history {
         justify-content: flex-start;
-        height: 8rem;
+        margin: 2rem 0;
     }
     .context-history .illustr-div {
         align-self: stretch;
@@ -284,6 +287,11 @@ header {
         top: 0 !important;
         bottom: 0 !important;
         height: 100% !important;
+    }
+    .custom-li-ico {
+        display: inline-block;
+        color: #ffcf11;
+        text-shadow: 0 0 3px black;
     }
 }
 /* --------------------Fin Section Contexte Tinga-------------------- */
