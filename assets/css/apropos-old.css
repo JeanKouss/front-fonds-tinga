@@ -34,40 +34,7 @@
 /* ------------------ Fin Contexte ----------------- */
 
 /* ------------------ Objectifs ----------------- */
-
-.objectif-global-container {
-    margin: 1rem;
-    background-color: #ffcf11;
-    border-radius: 1rem;
-    margin: 1rem;
-    padding-bottom: 2rem;
-}
-
-.obj-princip {
-    text-align: center;
-    padding: 0.5rem 0.5rem 2rem 0.5rem;
-    width: 100%;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.obj-princip h1 {
-    justify-self: flex-start;
-    width: 100%;
-    color: black;
-    font-family: "Spline Sans Mono", monospace;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-.obj-princip p {
-    color: black;
-}
-
-.objectifs-sec-container {
+.objectifs-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 350px));
     grid-template-rows: auto;
@@ -76,41 +43,33 @@
     justify-content: space-evenly;
     align-content: center;
 }
-.obj-second-pres {
+.obj-pres {
     width: 100%;
     max-width: 350px;
-    min-height: 250px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: transparent;
+    background-color: #ffcf11;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px 1px #41464b7a inset;
-    color: #236800;
 }
-.obj-second-pres h1 {
+.obj-pres h1 {
     justify-self: flex-start;
     width: 100%;
-    padding: 1.5rem 2rem;
+    padding: 7%;
     color: black;
     font-family: "Spline Sans Mono", monospace;
     font-weight: bold;
     font-size: 1.1rem;
 }
-.obj-second-pres hr {
+.obj-pres hr {
     width: 100%;
     opacity: 0;
 }
-.obj-second-pres p {
+.obj-pres p {
     flex-grow: 1;
-    padding: 1.5rem;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-shadow: 0 0 1px black;
+    padding: 7%;
 }
 /* ------------------ Fin Objectifs ----------------- */
 

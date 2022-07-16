@@ -349,6 +349,22 @@ header {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
 }
+
+.pres-who-can-don {
+    text-align: center;
+    padding: 0.5rem;
+}
+.pres-who-can-don img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    max-height: 70.5vw;
+}
+.pres-who-can-don p {
+    width: 100%;
+    margin: 1rem 0;
+}
+
 @media screen and (max-width : 700px) {
     .list-who-can-don {
         display: flex;
@@ -357,26 +373,53 @@ header {
         justify-content: space-evenly;
         align-items: center;
     }
-}
 
-.pres-who-can-don {
-    text-align: center;
-    padding: 0.5rem;
-}
-.pres-who-can-don img {
-    width: 100%;
-    max-width: 350px;
-    height: 250px;
-    max-height: 70.5vw;
-}
-.pres-who-can-don p {
-    width: 100%;
-    margin: 1rem 0;
+    .pres-who-can-don {
+        width: 100%;
+        max-width: 250px;   
+    }
+
+    .pres-who-can-don img {
+        width: 100%;
+        max-width: 200px;
+        height: 100px;
+        max-height: 70.5vw;
+    }
 }
 /* --------------------Fin Qui peut donner-------------------- */
 
 
 /* --------------------Section chiffres clés-------------------- */
+.chiffres-container {
+    background-color: #ffcf1150;
+    border-radius: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.principal-chiffre-container {
+    margin: 0 0 2rem 0;
+}
+
+.principal-chiffre {
+    font-size: 3rem;
+    color: #ffcf11;
+    text-shadow: 1px 1px #236800;
+    margin: 0;
+}
+
+.chiffres-container .min-pres-chiffre-clef {
+    background-color: transparent;
+    box-shadow: 2px 2px 6px 1px #23680033 inset;
+}
+
+.chiffres-container .min-pres-chiffre-clef .val {
+    text-shadow: 1px 1px #236800;
+}
+
+.chiffres-container .min-pres-chiffre-clef .label {
+    color: #236800;
+}
+
 /* --------------------Fin Section chiffres clés-------------------- */
 
 /* --------------------Section actualités-------------------- */
