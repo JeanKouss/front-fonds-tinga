@@ -33,4 +33,4 @@ slide()
 setInterval(() => {
     slide();
     console.log("slide");
-}, 5000);
+}, 8000);
